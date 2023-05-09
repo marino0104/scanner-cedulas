@@ -10,4 +10,8 @@ import { BarcodeFormat } from '@zxing/library';
 export class AppComponent {
   title = 'scanner-cedulas';
   allowedFormats=[BarcodeFormat.QR_CODE, BarcodeFormat.PDF_417]
+
+  scanSuccessHandler(e: any){
+    console.info(e)
+  }
 }
